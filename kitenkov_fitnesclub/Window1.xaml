@@ -1,0 +1,58 @@
+﻿<Window x:Class="kitenkov_fitnesclub.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kitenkov_fitnesclub"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="300">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="Purple" Offset="0"/>
+                <GradientStop Color="Pink" Offset="0.5"/>
+                <GradientStop Color="WhiteSmoke" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" 
+                   Margin="0,10,0,0" 
+                   Text="Авторизация" 
+                   VerticalAlignment="Top"
+                   FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="10,87,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Введите логин" 
+                   VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="10,146,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Введите пароль" 
+                   VerticalAlignment="Top"/>
+        <TextBox   HorizontalAlignment="Left" 
+                   Margin="10,112,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Width="120"/>
+        <TextBox   HorizontalAlignment="Left" 
+                   Margin="10,167,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button    Content="Войти" 
+                   Width="200"
+                   Height="25"
+                   HorizontalAlignment="Center" 
+                   Margin="0,239,0,0" 
+                   VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" 
+                   Margin="0,269,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Регистрация" 
+                   VerticalAlignment="Top"
+                   Foreground="BLUE"
+                   Width="70"
+                   Height="15"/>
+
+    </Grid>
+</Window>
